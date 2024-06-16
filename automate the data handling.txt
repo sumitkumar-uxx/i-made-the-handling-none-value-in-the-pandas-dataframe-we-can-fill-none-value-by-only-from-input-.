@@ -1,0 +1,10 @@
+import pandas as pd 
+data = {
+    "id": [32,665,212,212,None,654,234,876],
+    "name": ["bob",None,"carl",None,"amit","rajput","luffy","sanji"]
+}
+new = pd.DataFrame(data)
+print(new)
+input_put = input("remove duplicat value from entre column name:-")
+now = new.fillna(input_put)
+print(now)
